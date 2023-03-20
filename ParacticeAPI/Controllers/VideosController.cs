@@ -129,8 +129,8 @@ namespace ParacticeAPI.Controllers
 
             //return File(memoryStream, "application/zip", $"{id}_videos.zip");
             // Amazon S3 credentials and configuration.
-            var accessKeyId = "AKIAWZGSM6NUQIGAH6MV";
-            var secretAccessKey = "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";
+            var accessKeyId = "";
+            var secretAccessKey = "";
             var region = RegionEndpoint.USEast1;
             var bucketName = "ytvideodown";
             var s3Client = new AmazonS3Client(accessKeyId, secretAccessKey, region);

@@ -18,6 +18,5 @@ public class QuartzJobFactory : IJobFactory
 
     public void ReturnJob(IJob job)
     {
-        // Nothing to do here.
     }
 }
