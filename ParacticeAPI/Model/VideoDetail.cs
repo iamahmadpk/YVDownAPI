@@ -4,6 +4,8 @@ namespace ParacticeAPI.Model
 {
     public class VideoDetail
     {
+        internal string ErrorMessage;
+
         public int Id { get; set; }
         [ForeignKey("Id")]
         public int RequestId { get; set; }
