@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Quartz;
 using Quartz.Impl;
 using System;
+using YoutubeExplode;
+using YoutubeExplode.Videos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,9 +28,11 @@ builder.Services.AddSingleton(provider =>
 });
 //builder.Services.AddSingleton<UpdataStatus>();
 //builder.Services.AddSingleton<YoutubeClient>();
+//builder.Services.AddScoped<YoutubeClient>();
+
 // Schedule the job to run every minute.
-builder.Services.AddScoped<UpdataStatus>();
-builder.Services.AddSingleton<paracticeAPIDbContext>();
+//builder.Services.AddScoped<UpdataStatus>();
+//builder.Services.AddSingleton<paracticeAPIDbContext>();
 builder.Services.AddQuartz(q =>
 {
     q.UseMicrosoftDependencyInjectionJobFactory();
